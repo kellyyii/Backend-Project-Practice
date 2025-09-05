@@ -1,0 +1,58 @@
+Installed vscode
+Installed Node.js
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted in Vscode
+install express & nodemon & dotenv &thunder client
+
+
+//
+1/  npm init //build a package.json, then install express & nodemon
+
+2/  within package.json: 
+add "start": "node server.js", "dev": "nodemon server.js"
+Then run:  npm run dev
+
+3/  Build basic Server with points:
+1. require Express
+2. Port
+3. Listen port
+
+4/  Add an  .env  as a config file: For storing PORT
+To call port from .env file //install dotenv
+require dotenv in main
+
+5/  Send get request to the server // 404 error because nothing set up yet
+
+6/  Setup response 
+
+7/  create express route & setup crud: 
+1. Create routes FOR CRUD
+2. Export router
+3. use //in main, can assign a path
+
+8/  create error Handlers
+
+app.use(express.json());
+TRY: print the req.body in console. 
+
+if no status code,  pass 500 
+    const statusCode = res.statusCode ? res.statusCode : 500;
+
+
+install express-async-handler
+
+9/  Async CRUD codes &asyncHandler
+10/  Connect mongoDb 
+1. Add link into .env
+2. Build connection with mongoose
+3. Post the req body into dB. (+await)
+4. Get data from dB (check all stored data)
+5. Get specific data from dB by id
+6. PUT update to the dB by id
+7. Delete data by id (use .deleteOne instead)
+
+repeat steps of creating: routes(handle method), controller(for storing res), and model(for schema)
+
+
+
+
+
