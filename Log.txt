@@ -1,3 +1,4 @@
+Installed vscode
 Installed Node.js
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted in Vscode
 install express & nodemon & dotenv &thunder client
@@ -50,3 +51,11 @@ install express-async-handler
 7. Delete data by id (use .deleteOne instead)
 
 repeat steps of creating: routes(handle method), controller(for storing res), and model(for schema)
+
+bcrypt for encrypt password while storing in dB
+
+compare username
+compare encrypted password with input password
+
+
+
